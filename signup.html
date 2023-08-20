@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       form{
+        padding: 20px;
+        width: 600px;
+        margin-left: 300px;
+        
+       }
+       body{
+        background-image: url(/asset.html/signup.jpg);
+        background-size: 100% 100%;
+       }
+    </style>
+</head>
+<body>
+   <h1 style="margin-left: 400px;">Create an Account</h1>
+   <form action="/asset.html/welcome.html">
+    <input type="text" name="First name" id="fn" placeholder="Enter Your First Name" required>
+    <input type="text" name="Middle name" id="mn" placeholder="Enter Your Middle Name">
+    <input type="text" name="Last name" id="ln" placeholder="Enter Your Last Name" required> <br>
+    <br>
+    <input type="email" name="Email-id" placeholder="Email-id"> <br>
+    <br>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob"> <br>
+    <br>
+    <input type="number" name="age" placeholder="Enter Your Age" min="18" required> <br>
+    <br>
+    <input type="number" name="Contact" placeholder="Contact Number"> <br>
+    <br>
+    <label>Gender</label> <br>
+    <input type="radio" name="gender" id="m">
+    <label for="m">Male</label>
+    <input type="radio" name="gender" id="f">
+    <label for="f">Female</label>
+    <input type="radio" name="gender" id="o">
+    <label for="o">Others</label> <br>
+    <br>
+    <textarea name="Address" id="a" placeholder="Address" cols="30" rows="10"></textarea> <br>
+    <br>
+    <p>Level</p>
+    <select name = "dropdown">
+        <option value = "Experienced" id="q" selected>Experienced</option>
+        <option value = "Fresher" id="q">Fresher</option>
+        <option value = "Studying" id="q"> Studying</option>
+     </select>
+    <p>Technical Skills</p>
+    <label>Programming</label>
+    <input type="range">
+    <label>Testing</label>
+    <input type="range">
+    <label></label><br>
+    <p>Passport size photo</p>
+    <input type = "file" name = "fileupload" accept = "image/*" required/> <br>
+    <p>Signature</p>
+    <input type = "file" name = "fileupload" accept = "image/*" required/> <br>
+    <p>ID Proof</p>
+    <input type = "file" name = "fileupload" accept = "image/*" required/>
+    <p>Notification send by</p>
+    <input type="checkbox" id="n1" checked>
+    <label for="n1">By SMS</label>
+    <input type="checkbox" id="n2">
+    <label for="n2">By Mail</label> <br>
+    <br>
+    <input type="checkbox" id="c1">
+    <label for="c1">I trust this app completely</label> <br>
+    <input type="checkbox" id="c2">
+    <label for="c2">I agree to the terms and conditions</label> <br>
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+    <form action="">
+        <input type="submit" value="Reset">
+    </form>
+</body>
+</html>
